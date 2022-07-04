@@ -8,4 +8,10 @@
               sequence="1"
               action="lot_customer_action"
               parent="menu_main"/>
+
+    <menuitem id="return_stock_menu"
+              name="Trả ế"
+              sequence="2"
+              action="return_stock_action"
+              parent="menu_main"/>
 </odoo>

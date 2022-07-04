@@ -13,6 +13,8 @@
                     <field name="unit_price"/>
                     <field name="status"/>
                     <field name="note"/>
+                    <button name="action_edit" type="object" class="fa fa-pencil btn btn-primary"/>
+                    <button name="action_delete" confirm="Đồng ý xóa?" type="object" class="fa fa-trash btn-danger"/>
                 </tree>
             </field>
         </record>

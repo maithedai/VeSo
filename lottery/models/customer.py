@@ -46,3 +46,18 @@ class LotCustomer(models.Model):
     kg_cn = fields.Integer('KG')
     dl_cn = fields.Integer('ĐL')
     tg_cn = fields.Integer('TG')
+
+    return_stock_id = fields.Many2one('return.stock')
+
+    def action_edit(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'view_mode': 'form',
+            'res_model': 'lot.customer',
+            'res_id': self.id,
+            'views': [(self.env.ref("lottery.lot_customer_form").id, 'form')],
+            'target': 'new',
+        }
+
+    def action_delete(self):
+        self.unlink()

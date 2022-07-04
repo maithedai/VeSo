@@ -13,7 +13,9 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/assets.xml',
         'views/lot_customer_view.xml',
+        'views/return_stock_view.xml',
         'menus/lottery_menu.xml',
     ],
     'images': [

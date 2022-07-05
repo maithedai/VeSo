@@ -47,6 +47,13 @@ class LotCustomer(models.Model):
     dl_cn = fields.Integer('ĐL')
     tg_cn = fields.Integer('TG')
 
+    percent = fields.Float("%")
+    sum_return = fields.Integer("Tổng trả")
+    consume = fields.Integer("Tiêu thụ")
+    ticket_receive = fields.Integer("Lượng vé lãnh")
+    du_thieu = fields.Integer('Dư thiếu')
+    revenues = fields.Float('Tiền thu')
+
     return_stock_id = fields.Many2one('return.stock')
 
     def action_edit(self):

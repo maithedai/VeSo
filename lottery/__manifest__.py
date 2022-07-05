@@ -13,6 +13,7 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'data/lot.tele.csv',
         'views/assets.xml',
         'views/lot_customer_view.xml',
         'views/return_stock_view.xml',

@@ -6,15 +6,30 @@
             <field name="model">return.stock</field>
             <field name="arch" type="xml">
                 <form>
+                    <field name="date"/>
                     <field name="customer_ids">
                         <tree>
                             <field name="name" string="Khách hàng"/>
-                            <field name="gender"/>
-                            <field name="phone"/>
-                            <field name="address"/>
-                            <field name="unit_price"/>
-                            <field name="status"/>
-                            <field name="note"/>
+                            <field name="hcm_2"/>
+                            <field name="dt_2"/>
+                            <field name="cm_2"/>
+                            <field name="hcm_2"/>
+                            <field name="dt_2"/>
+                            <field name="cm_2"/>
+                            <field name="percent"/>
+                            <field name="sum_return"/>
+                            <field name="consume"/>
+                            <field name="ticket_receive"/>
+                            <field name="du_thieu"/>
+                            <field name="revenues"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids">
+                        <tree>
+                            <field name="name"/>
+                            <field name="hcm_2"/>
+                            <field name="dt_2"/>
+                            <field name="cm_2"/>
                         </tree>
                     </field>
                 </form>

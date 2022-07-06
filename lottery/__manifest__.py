@@ -12,8 +12,8 @@
         'base', 'web', 'mail',
     ],
     'data': [
-        'security/ir.model.access.csv',
         'data/lot.tele.csv',
+        'security/ir.model.access.csv',
         'views/assets.xml',
         'views/lot_customer_view.xml',
         'views/return_stock_view.xml',

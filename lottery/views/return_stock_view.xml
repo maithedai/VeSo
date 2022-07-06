@@ -5,17 +5,18 @@
             <field name="name">return.stock.form</field>
             <field name="model">return.stock</field>
             <field name="arch" type="xml">
-                <form>
+                <form edit="0" create="0">
                     <field name="date"/>
-                    <field name="customer_ids">
-                        <tree>
+                    <field name="weekday" invisible="1"/>
+                    <field name="customer_ids_2" attrs="{'invisible': [('weekday', '!=', '0')]}" readonly="0">
+                        <tree editable="top">
                             <field name="name" string="Khách hàng"/>
-                            <field name="hcm_2"/>
-                            <field name="dt_2"/>
-                            <field name="cm_2"/>
-                            <field name="hcm_2"/>
-                            <field name="dt_2"/>
-                            <field name="cm_2"/>
+                            <field name="r_hcm_2"/>
+                            <field name="r_dt_2"/>
+                            <field name="r_cm_2"/>
+                            <field name="p_hcm_2"/>
+                            <field name="p_dt_2"/>
+                            <field name="p_cm_2"/>
                             <field name="percent"/>
                             <field name="sum_return"/>
                             <field name="consume"/>
@@ -24,12 +25,165 @@
                             <field name="revenues"/>
                         </tree>
                     </field>
-                    <field name="tele_ids">
-                        <tree>
-                            <field name="name"/>
+                    <field name="customer_ids_3" attrs="{'invisible': [('weekday', '!=', '1')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" string="Khách hàng"/>
+                            <field name="r_bl_3"/>
+                            <field name="r_bt_3"/>
+                            <field name="r_vt_3"/>
+                            <field name="p_bl_3"/>
+                            <field name="p_bt_3"/>
+                            <field name="p_vt_3"/>
+                            <field name="percent"/>
+                            <field name="sum_return"/>
+                            <field name="consume"/>
+                            <field name="ticket_receive"/>
+                            <field name="du_thieu"/>
+                            <field name="revenues"/>
+                        </tree>
+                    </field>
+                    <field name="customer_ids_4" attrs="{'invisible': [('weekday', '!=', '2')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" string="Khách hàng"/>
+                            <field name="r_st_4"/>
+                            <field name="r_ct_4"/>
+                            <field name="r_dn_4"/>
+                            <field name="p_st_4"/>
+                            <field name="p_ct_4"/>
+                            <field name="p_dn_4"/>
+                            <field name="percent"/>
+                            <field name="sum_return"/>
+                            <field name="consume"/>
+                            <field name="ticket_receive"/>
+                            <field name="du_thieu"/>
+                            <field name="revenues"/>
+                        </tree>
+                    </field>
+                    <field name="customer_ids_5" attrs="{'invisible': [('weekday', '!=', '3')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" string="Khách hàng"/>
+                            <field name="r_tn_5"/>
+                            <field name="r_ag_5"/>
+                            <field name="r_bth_5"/>
+                            <field name="p_tn_5"/>
+                            <field name="p_ag_5"/>
+                            <field name="p_bth_5"/>
+                            <field name="percent"/>
+                            <field name="sum_return"/>
+                            <field name="consume"/>
+                            <field name="ticket_receive"/>
+                            <field name="du_thieu"/>
+                            <field name="revenues"/>
+                        </tree>
+                    </field>
+                    <field name="customer_ids_6" attrs="{'invisible': [('weekday', '!=', '4')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" string="Khách hàng"/>
+                            <field name="r_bd_6"/>
+                            <field name="r_tv_6"/>
+                            <field name="r_vl_6"/>
+                            <field name="p_bd_6"/>
+                            <field name="p_tv_6"/>
+                            <field name="p_vl_6"/>
+                            <field name="percent"/>
+                            <field name="sum_return"/>
+                            <field name="consume"/>
+                            <field name="ticket_receive"/>
+                            <field name="du_thieu"/>
+                            <field name="revenues"/>
+                        </tree>
+                    </field>
+                    <field name="customer_ids_7" attrs="{'invisible': [('weekday', '!=', '5')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" string="Khách hàng"/>
+                            <field name="r_hcm_7"/>
+                            <field name="r_la_7"/>
+                            <field name="r_bp_7"/>
+                            <field name="r_hg_7"/>
+                            <field name="p_hcm_7"/>
+                            <field name="p_la_7"/>
+                            <field name="p_bp_7"/>
+                            <field name="p_hg_7"/>
+                            <field name="percent"/>
+                            <field name="sum_return"/>
+                            <field name="consume"/>
+                            <field name="ticket_receive"/>
+                            <field name="du_thieu"/>
+                            <field name="revenues"/>
+                        </tree>
+                    </field>
+                    <field name="customer_ids_cn" attrs="{'invisible': [('weekday', '!=', '6')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" string="Khách hàng"/>
+                            <field name="r_kg_cn"/>
+                            <field name="r_dl_cn"/>
+                            <field name="r_tg_cn"/>
+                            <field name="p_kg_cn"/>
+                            <field name="p_dl_cn"/>
+                            <field name="p_tg_cn"/>
+                            <field name="percent"/>
+                            <field name="sum_return"/>
+                            <field name="consume"/>
+                            <field name="ticket_receive"/>
+                            <field name="du_thieu"/>
+                            <field name="revenues"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids_2" attrs="{'invisible': [('weekday', '!=', '0')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" readonly="1"/>
                             <field name="hcm_2"/>
                             <field name="dt_2"/>
                             <field name="cm_2"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids_3" attrs="{'invisible': [('weekday', '!=', '1')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" readonly="1"/>
+                            <field name="bl_3"/>
+                            <field name="bt_3"/>
+                            <field name="vt_3"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids_4" attrs="{'invisible': [('weekday', '!=', '2')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" readonly="1"/>
+                            <field name="st_4"/>
+                            <field name="ct_4"/>
+                            <field name="dn_4"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids_5" attrs="{'invisible': [('weekday', '!=', '3')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" readonly="1"/>
+                            <field name="tn_5"/>
+                            <field name="ag_5"/>
+                            <field name="bth_5"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids_6" attrs="{'invisible': [('weekday', '!=', '4')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" readonly="1"/>
+                            <field name="bd_6"/>
+                            <field name="tv_6"/>
+                            <field name="vl_6"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids_7" attrs="{'invisible': [('weekday', '!=', '5')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" readonly="1"/>
+                            <field name="hcm_7"/>
+                            <field name="la_7"/>
+                            <field name="bp_7"/>
+                            <field name="hg_7"/>
+                        </tree>
+                    </field>
+                    <field name="tele_ids_cn" attrs="{'invisible': [('weekday', '!=', '6')]}" readonly="0">
+                        <tree editable="top">
+                            <field name="name" readonly="1"/>
+                            <field name="kg_cn"/>
+                            <field name="dl_cn"/>
+                            <field name="tg_cn"/>
                         </tree>
                     </field>
                 </form>

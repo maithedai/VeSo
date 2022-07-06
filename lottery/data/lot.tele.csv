@@ -1,5 +1,5 @@
-"id","name","return_stock_id"
-id_1,"SL trả ế","2"
-id_2,"Thực tế","2"
-id_3,"Lệch","2"
-id_4,"Tỉ lệ","2"
+id,name
+"id_1","SL trả ế"
+"id_2","Thực tế"
+"id_3","Lệch"
+"id_4","Tỉ lệ"

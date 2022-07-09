@@ -14,4 +14,10 @@
               sequence="2"
               action="return_stock_action"
               parent="menu_main"/>
+
+    <menuitem id="import_stock_menu"
+              name="Nhập kho"
+              sequence="3"
+              action="import_stock_action"
+              parent="menu_main"/>
 </odoo>

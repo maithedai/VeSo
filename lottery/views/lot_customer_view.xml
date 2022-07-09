@@ -39,115 +39,115 @@
                             </group>
                         </group>
                         <group col="1">
-                            <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                                <div style="display: flex; width: 100%; justify-content: center; align-items: center; font-size: 16px; font-weight: 600;">
+                            <div class="lottery-im">
+                                <div class="lottery-name">
                                     KẾ HOẠCH LÃNH VÉ THEO ĐÀI
                                 </div>
-                                <div style="display: flex; width: 60%; align-items: center;">
+                                <div class="lot-item">
                                     <div style="width: 100px">Thứ 2:</div>
                                     <div style="width: 100px">
                                         <label for="hcm_2"/>
                                         <field name="hcm_2"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="dt_2"/>
                                         <field name="dt_2"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="cm_2"/>
                                         <field name="cm_2"/>
                                     </div>
                                 </div>
-                                <div style="display: flex; width: 60%; align-items: center;">
+                                <div class="lot-item">
                                     <div style="width: 100px">Thứ 3:</div>
                                     <div style="width: 100px">
                                         <label for="bl_3"/>
                                         <field name="bl_3"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="bt_3"/>
                                         <field name="bt_3"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="vt_3"/>
                                         <field name="vt_3"/>
                                     </div>
                                 </div>
-                                <div style="display: flex; width: 60%; align-items: center;">
+                                <div class="lot-item">
                                     <div style="width: 100px">Thứ 4:</div>
                                     <div style="width: 100px">
                                         <label for="st_4"/>
                                         <field name="st_4"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="ct_4"/>
                                         <field name="ct_4"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="dn_4"/>
                                         <field name="dn_4"/>
                                     </div>
                                 </div>
-                                <div style="display: flex; width: 60%; align-items: center;">
+                                <div class="lot-item">
                                     <div style="width: 100px">Thứ 5:</div>
                                     <div style="width: 100px">
                                         <label for="tn_5"/>
                                         <field name="tn_5"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="ag_5"/>
                                         <field name="ag_5"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="bth_5"/>
                                         <field name="bth_5"/>
                                     </div>
                                 </div>
-                                <div style="display: flex; width: 60%; align-items: center;">
+                                <div class="lot-item">
                                     <div style="width: 100px">Thứ 6:</div>
                                     <div style="width: 100px">
                                         <label for="bd_6"/>
                                         <field name="bd_6"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="tv_6"/>
                                         <field name="tv_6"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="vl_6"/>
                                         <field name="vl_6"/>
                                     </div>
                                 </div>
-                                <div style="display: flex; width: 60%; align-items: center;">
+                                <div class="lot-item">
                                     <div style="width: 100px">Thứ 7:</div>
                                     <div style="width: 100px">
                                         <label for="hcm_7"/>
                                         <field name="hcm_7"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="la_7"/>
                                         <field name="la_7"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="bp_7"/>
                                         <field name="bp_7"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="hg_7"/>
                                         <field name="hg_7"/>
                                     </div>
                                 </div>
-                                <div style="display: flex; width: 60%; align-items: center;">
+                                <div class="lot-item">
                                     <div style="width: 100px">Chủ nhật:</div>
                                     <div style="width: 100px">
                                         <label for="kg_cn"/>
                                         <field name="kg_cn"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="dl_cn"/>
                                         <field name="dl_cn"/>
                                     </div>
-                                    <div style="width: 100px; margin-left: 50px">
+                                    <div class="lot-tv">
                                         <label for="tg_cn"/>
                                         <field name="tg_cn"/>
                                     </div>

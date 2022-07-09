@@ -2,4 +2,6 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_customer_admin,access_customer_admin,model_lot_customer,base.group_user,1,1,1,1
 access_return_stock_admin,access_return_stock_admin,model_return_stock,base.group_user,1,1,1,1
 access_lot_tele_admin,access_lot_tele_admin,model_lot_tele,base.group_user,1,1,1,1
+access_import_stock_admin,access_import_stock_admin,model_import_stock,base.group_user,1,1,1,1
+access_lot_tele_import_admin,access_lot_tele_import_admin,model_lot_tele_import,base.group_user,1,1,1,1
 

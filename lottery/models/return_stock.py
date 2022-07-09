@@ -21,12 +21,12 @@ class ReturnStock(models.TransientModel):
     tele_ids_cn = fields.One2many('lot.tele', compute='_compute_tele_ids')
     date = fields.Date(default=fields.Date.context_today)
     weekday = fields.Selection(
-        selection=[('0', '2'),
-                   ('1', '3'),
-                   ('2', '4'),
-                   ('3', '5'),
-                   ('4', '6'),
-                   ('5', '7'),
+        selection=[('0', 't2'),
+                   ('1', 't3'),
+                   ('2', 't4'),
+                   ('3', 't5'),
+                   ('4', 't6'),
+                   ('5', 't7'),
                    ('6', 'cn')], compute='_compute_weekday')
 
     @api.depends('date')

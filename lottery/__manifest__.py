@@ -13,12 +13,24 @@
     ],
     'data': [
         'data/lot.tele.csv',
+        'data/lot.tele.import.csv',
         'security/ir.model.access.csv',
-        'views/assets.xml',
         'views/lot_customer_view.xml',
         'views/return_stock_view.xml',
+        'views/import_stock_view.xml',
         'menus/lottery_menu.xml',
     ],
+
+    'assets': {
+        'web.assets_qweb': [
+
+        ],
+        'web.assets_backend': [
+            'lottery/static/src/scss/common.scss'
+        ],
+        'web.assets_tests': [
+        ],
+    },
     'images': [
 
     ],

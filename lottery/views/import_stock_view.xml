@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="import_stock_form" model="ir.ui.view">
+            <field name="name">import.stock.form</field>
+            <field name="model">import.stock</field>
+            <field name="arch" type="xml">
+                <form edit="0" create="0">
+                    <field name="date"/>
+                    <field name="weekday" invisible="1"/>
+                    <field name="line_ids" readonly="0">
+                        <tree editable="bottom">
+                            <field name="name" readonly="1"/>
+                            <field name="num_im_com"/>
+                            <field name="num_im_pro"/>
+                            <field name="total"/>
+                        </tree>
+                    </field>
+                </form>
+            </field>
+        </record>
+        <record id="import_stock_action" model="ir.actions.act_window">
+            <field name="name">Nhập kho</field>
+            <field name="res_model">import.stock</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+</odoo>
